@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Login Mobile</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 : LOGIN -->
+<div data-role="page" id="loginPage">
+
+    <div data-role="header" data-theme="b">
+        <h1>Login Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <form id="loginForm">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit" data-theme="a">Submit</button>
+
+        </form>
+
+        <!-- POPUP ERROR -->
+        <div data-role="popup" id="popupError" data-theme="a">
+
+            <div data-role="header">
+                <h1>Ralat</h1>
+            </div>
+
+            <div role="main" class="ui-content">
+                <p>Sila isi username & password</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div data-role="footer" data-theme="b">
+        <h4>DFK20013</h4>
+    </div>
+
+</div>
+
+
+<!-- PAGE 2 : SUCCESS LOGIN -->
+<div data-role="page" id="successPage">
+
+    <div data-role="header" data-theme="b">
+        <h1>Login Berjaya</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Selamat Datang!</h2>
+        <p>Anda telah berjaya login.</p>
+
+        <a href="#loginPage" data-role="button" data-theme="a">
+            Logout
+        </a>
+    </div>
+
+    <div data-role="footer" data-theme="b">
+        <h4>DFK20013</h4>
+    </div>
+
+</div>
+
+</body>
+</html>
